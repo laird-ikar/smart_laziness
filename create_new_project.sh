@@ -3,4 +3,5 @@ cd $1
 git init
 touch srcs/$1.c
 touch srcs/$1.h
-sed "s/PLACE_HOLDER/$1/" Makefile > /dev/null
+sed "s/PLACE_HOLDER/$1/" Makefile > tmp
+mv tmp Makefile
